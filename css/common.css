@@ -27,3 +27,17 @@ button {
 ul {
   list-style: none;
 }
+
+img {
+  /* object-fit: fill; */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 24px 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
