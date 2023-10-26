@@ -5,9 +5,10 @@ nameInput.addEventListener("input", nameOutputChange);
 
 function nameOutputChange(event) {
   if (
-    (nameOutput.textContent = event.currentTarget.value)
+    (nameOutput.textContent =
+      event.currentTarget.value.trim())
   ) {
     return nameOutput;
   }
-  return (nameOutput.textContent = "Anonymous");
+  nameOutput.textContent = "Anonymous";
 }

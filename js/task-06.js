@@ -9,7 +9,10 @@ inputEl.addEventListener("blur", (event) => {
   const dataLength = Number(inputEl.dataset.length);
 
   if (inputValuedLength === dataLength) {
-    inputEl.classList.toggle("valid");
+    inputEl.classList.remove("invalid");
+    inputEl.classList.add("valid");
+  } else {
+    inputEl.classList.remove("valid");
+    inputEl.classList.add("invalid");
   }
-  return inputEl.classList.toggle("invalid");
 });
